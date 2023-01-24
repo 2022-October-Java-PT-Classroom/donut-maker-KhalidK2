@@ -4,10 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">More
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">The Original Game</a>          
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h3>Donut Clicker Game!</h3>
+          <img  id = "donutImg" src="./img/donuttt.png" alt="" class="center" width="500" height="600">
+          <br><br>
+          Donuts Earned =
+          <input type ="text" id="text">
+          
+          <h3 class="auto-clicker-price"></h3>
+          <h3 class="How-Many-Auto-Clickers"></h3>
+          <button id="AutoClickerButton"><img src="/img/click.png" width="50px"></button>
+          <br>
+          <h3 class="Donut-Mutliplier-price"></h3>
+          <h3 class="How-Many-Multipliers"></h3>
+          <button id="DonutMutiplierButton"><img src="/img/multiply.jpg" width="50px"></button>
+          <br><br><button id="ResetButton">Reset</button>
+    </div>
+    <script src="./Donut.js"></script>
+    <script src="./index.js"type = "module"></script>
   </body>
 </html>
